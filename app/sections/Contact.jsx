@@ -6,12 +6,12 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <section id='contact' className='w-full mt-20 flex justify-between '>
+    <section id='contact' className='w-full mt-20 flex flex-col md:flex-row justify-between '>
 
-<div className="w-1/4 px-10 flex flex-col rounded-lg bg-[#f68900] py-5  justify-between">
-<p>Contact Information</p>
+<div className="lg:w-1/4 px-10 lg:px-5 flex flex-col rounded-lg bg-[#f68900] py-5  justify-between">
+<p className='pb-5'>Contact Information</p>
 
-<div className="flex flex-col text-left text-sm font-light gap-5">
+<div className="flex flex-col pb-10  text-left text-sm font-light gap-5">
    
     <div className="flex gap-2">
        <PhoneIcon className='w-5 h-5'/> 
@@ -41,12 +41,12 @@ const Contact = () => {
  </div>
  {/* SOcial Icons */}
 </div>
-<div className="w-3/4 h-full">
-<div className=" text-white p-8 w-full rounded-lg">
+<div className=" w-full lg:w-3/4 h-full">
+<div className=" text-white py-10 lg:p-8 w-full rounded-lg">
       <form className='w-full'>
         {/* First Name and Last Name */}
         <div className="w-full flex gap-4">
-          <div>
+          <div className='w-1/2'>
             <label className="block text-sm font-medium mb-1" htmlFor="firstName">First Name</label>
             <input
               type="text"
@@ -55,7 +55,7 @@ const Contact = () => {
               className="w-full p-2  border-b-2 bg-transparent border-gray-600 outline-none focus:border-yellow-500"
             />
           </div>
-          <div>
+          <div className='w-1/2'>
             <label className="block text-sm font-medium mb-1" htmlFor="lastName">Last Name</label>
             <input
               type="text"
@@ -90,7 +90,7 @@ const Contact = () => {
         {/* Subject (Radio Buttons) */}
         <div className="mt-4 pt-10 pb-10">
           <span className="block text-sm font-medium mb-2">Select Subject?</span>
-          <div className="flex space-x-4">
+          <div className="flex flex-col lg:flex-row gap-2 space-x-4">
             {[...Array(4)].map((_, i) => (
               <label key={i} className="inline-flex items-center">
                 <input

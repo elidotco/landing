@@ -4,7 +4,7 @@ import React from 'react'
 
 const PriceCard = () => {
   return (
-    <div className='w-[32%]'>
+    <div className='w-full flex flex-col items-center pb-14 lg:w-[32%]'>
         <p className='text-xl font-medium'>
           <span className='  text-[#f68900] '>$9 per User</span><span className='text-sm'>
           /month
@@ -37,8 +37,8 @@ const PriceCard = () => {
            <CheckIcon className='w-4 h-4 '/></div><p>  Time Tracking         </p>
            </div>
         </div>
-       <div className="pt-5 w-full"></div>
-       <Link href='/#' className='text-center w-full rounded-3xl px-3 py-2 text-sm mt-10 bg-[#f68900] transition-all duration-100 hover:bg-[#f6991f]'>
+       <div className="pt-5 w-1/2 lg:w-full"></div>
+       <Link href='/#' className='text-center lg:w-full rounded-3xl px-5 lg:px-3 py-2 text-sm mt-10 bg-[#f68900] transition-all duration-100 hover:bg-[#f6991f]'>
         <span>Contact Sales</span>
         </Link>
     </div>

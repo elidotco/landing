@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='w-32 mx-auto h-12 mb-5'>
             <img alt='logo' src='./logo.png' className=' w-full h-full'/>
         </div>
-<footer className='text-white w-full flex justify-between py-5 items-center border-t-2  border-white gap-20'>
+<footer className='text-white w-full  flex-col gap-10 md:flex-row flex justify-between py-5 items-center border-t-2  border-white md:gap-20'>
 
 <div className="flex flex-col text-left text-sm font-light gap-5">
     <h3 className='text-lg font-normal'>Reach Us</h3>
